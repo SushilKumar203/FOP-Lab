@@ -1,0 +1,72 @@
+                                                                              Programs (While Loop)
+
+P1: Print Numbers; Write a program to print numbers from 0 to 10 and then from 10 to 0 using two while loops.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	printf("The Increment from 0-10 \n");
+    int limit = 0;
+    while (limit < 11) {
+        printf("The number is: %d\n", limit);  // Properly format the output
+        limit += 1; // Increment by 1
+    }
+    
+    printf("The Decrement from 10-0 \n");
+    int Index=10;
+    while(Index>=0){
+    	printf("The number is: %d\n", Index);
+    	Index -= 1; // Decrement by 1
+    	
+	} 
+    return 0;
+}
+
+P2: Sum of Positive Integers; Prompt the user to input integers until they enter 0. Calculate and print the sum of all positive integers entered.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int number;
+    int sum = 0;
+
+    printf("\n\n\t\t\t\tEnter numbers to sum up (press 0 to end the program):\n");
+
+    printf("\t\t\t\tNumber: ");
+    scanf("%d", &number);
+
+    while (number > 0) {
+        sum = sum + number;
+
+\
+        printf("\t\t\t\tNumber: ");
+        scanf("%d", &number);
+    }
+
+    printf("\n\t\t\t\tThe sum of the given numbers is: %d\n", sum);
+    return 0;
+}
+
+P-3:Product Calculation; Calculate the product of numbers from 1 to 5 using a while loop.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int number = 1;
+    int product = 1;
+
+    while (number < 6) {
+        product = product * number;
+        number = number + 1;
+    }
+
+    // Adding a newline for cleaner output
+    printf("\t\t\t\t*****The product of numbers from 1 to 5 is: %d*****\n", product);
+
+    return 0;
+}
+
+
+
